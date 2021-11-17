@@ -127,20 +127,16 @@ document.addEventListener("mouseenter", (e) => {
   cursorElements.forEach((element) => element.classList.remove("hidden"));
 });
 
-let particlesInterval;
-
 links.forEach((element) => {
   element.addEventListener("mouseenter", (e) => {
     e.preventDefault();
     cursorElements.forEach((element) => element.classList.add("hover"));
-    particlesInterval = setInterval(() => createParticles(e), 10);
   });
 });
 links.forEach((element) => {
   element.addEventListener("mouseleave", (e) => {
     e.preventDefault();
     cursorElements.forEach((element) => element.classList.remove("hover"));
-    clearInterval(particlesInterval);
   });
 });
 

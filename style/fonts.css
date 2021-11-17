@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "FiraCode";
-  src: url("../resources/fonts/FiraCode-VariableFont_wght.ttf");
+  font-family: "Roboto-Regular";
+  src: url("../resources/fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Pacifico";
-  src: url("../resources/fonts/Pacifico-Regular.ttf");
+  font-family: "FiraCode";
+  src: url("../resources/fonts/FiraCode-VariableFont_wght.ttf");
 }

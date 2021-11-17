@@ -4,140 +4,68 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  user-select: none;
 }
 
 * {
   box-sizing: border-box;
-  pointer-events: auto;
   cursor: none;
 }
 
 body {
-  background: hsl(250, 31%, 95%);
+  background: hsl(252, 11%, 10%);
+  color: hsl(252, 11%, 80%);
 
   padding: 20px 0;
+
+  font-size: 16px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  cursor: none;
+  font-family: "Roboto-Regular";
 }
 
 #main {
   min-height: 100%;
 
-  border: 1px hsl(250, 31%, 80%);
+  border: 1px hsl(252, 11%, 20%);
   border-style: none dashed;
 }
 
-#cursor {
-  width: 100px;
-  height: 100px;
-  top: 0;
-  left: 0;
-
-  position: fixed;
-
-  transform: translate(-50%, -50%);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#main * {
+  pointer-events: all;
 }
 
-#cursor > * {
-  z-index: 20;
-  opacity: 1;
+#main > * {
+  padding-left: 20px;
 }
 
-#cursor,
-#cursor > *,
-#particles,
-#particles > * {
-  pointer-events: none;
+#main > h1 {
+  font-size: 2.2rem;
 }
 
-#cursor > .large-circle {
-  width: 30px;
-  height: 30px;
-
-  border: 2px solid rgba(60, 60, 80, 0.8);
-  border-radius: 50%;
-
-  transition: all 250ms ease-out, transform 100ms ease-out, width 50ms ease-out,
-    height 50ms ease-out;
-
-  position: fixed;
+#main > div > * {
+  padding-left: 20px;
 }
 
-#cursor > .large-circle.click {
-  width: 20px;
-  height: 20px;
+#main > div > h1 {
+  font-size: 1.6rem;
 }
 
-#cursor > .large-circle.hidden {
-  width: 1px;
-  height: 1px;
+#main > div > div > * {
+  padding-left: 20px;
 }
 
-#cursor > .dot {
-  border: 2px solid rgba(60, 60, 80, 0.8);
-  border-radius: 50%;
-
-  transition: all 250ms ease-out, transform 0ms, border-width 0ms, padding 0ms;
-
-  position: fixed;
+#main > div > div > h1 {
+  font-size: 1.2rem;
 }
 
-#cursor > .dot.click {
-  opacity: 0;
-  border-width: 0;
+.link {
+  color: inherit;
 }
 
-#cursor > .dot.hover {
-  padding: 4px;
-}
-
-#cursor > .dot.hidden {
-  border-width: 0;
-}
-
-#cursor > .dot.click.hover {
-  padding: 0;
-}
-
-#cursor > .hidden {
-  opacity: 0;
-}
-
-#particles {
-  width: 10px;
-  height: 10px;
-  top: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
-
-  z-index: -1;
-
-  position: fixed;
-}
-
-#particles > .particle {
-  width: 4px;
-  height: 4px;
-
-  background: rgba(60, 60, 80, 0.6);
-  border-radius: 50%;
-  /* border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
-  border-bottom: 4px solid rgba(60, 60, 80, 0.8); */
-
-  transform: translate(-50%, -50%);
-
-  transition: 500ms ease-in, left 250ms ease, top 250ms ease;
-
-  position: fixed;
+li {
+  list-style-position: inside;
+  padding-left: 10px;
 }
